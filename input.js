@@ -15,18 +15,20 @@ const setupInput = (conn) => {
 
 const handleUserInput = function (key) {
 
-  connection.write('Say: I am flying');
-  
   if (key == "w") {
+   connection.write('Say: I am flying');
    connection.write('Move: up');
   }
   if (key == "a") {
+    connection.write('Say: I am gliding');
     connection.write('Move: left');
    }
    if (key == "d") {
+    connection.write('Say: I am gliding');
     connection.write('Move: right');
    }
    if (key == "s") {
+    connection.write('Say: I am drowning');
     connection.write('Move: down');
    }
   if (key == '\u0003') {
